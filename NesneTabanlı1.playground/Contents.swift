@@ -84,3 +84,71 @@ memeli.sesCikar() //Kalıtım var, üst sınıfın fonksiyonunu çalıştırdı.
 kedi.sesCikar() //Kalıtım var, kendi metodunu çalıştırdı.
 kopek.sesCikar() //Kalıtım var, kendi metodunu çalıştırdı.
 
+
+
+// Tip Dönüşümü
+
+// Upcasting
+var ev = Saray(kuleSayisi: 3, pencereSayisi: 10) as Ev
+
+// Downcasting
+var saray = Ev(pencereSayisi: 6) as? Saray
+
+
+// Tip Kontrolü
+
+if ev is Ev {
+    print("Nesne ev sınıfındandır.")
+}else{
+    print("Nesne ev sınıfından değildir.")
+}
+
+
+//Protocol
+
+protocol MyProtocol {
+    var degisken:Int { get set }
+    
+    func metod1()
+    func metod2() -> String
+}
+
+class ClassA: MyProtocol{
+    var degisken: Int = 10
+    func metod1() {
+        print("Metod1 çalıştı")
+    }
+    
+    func metod2() -> String {
+        return "Metod2 çalıştı"
+    }
+    
+}
+
+var a = ClassA()
+
+print(a.degisken)
+
+a.metod1()
+
+print(a.metod2())
+
+// Extension
+
+extension Int {
+    func carp(sayi:Int) -> Int {
+        return self * sayi
+    }
+}
+
+let x = 3.carp(sayi: 5)
+print(x)
+
+
+// Closure
+
+let ifade = { 
+    print("Merhaba")
+}
+
+ifade()
