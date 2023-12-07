@@ -13,6 +13,7 @@
 		FE1966A92B21D258009A03C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1966A72B21D258009A03C0 /* Main.storyboard */; };
 		FE1966AB2B21D25A009A03C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE1966AA2B21D25A009A03C0 /* Assets.xcassets */; };
 		FE1966AE2B21D25A009A03C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1966AC2B21D25A009A03C0 /* LaunchScreen.storyboard */; };
+		FE1966B72B21F761009A03C0 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE1966B62B21F761009A03C0 /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		FE1966AA2B21D25A009A03C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE1966AD2B21D25A009A03C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE1966AF2B21D25A009A03C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE1966B62B21F761009A03C0 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		FE1966B82B220999009A03C0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		FE1966B92B220999009A03C0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,21 @@
 				FE1966A12B21D258009A03C0 /* AppDelegate.swift */,
 				FE1966A32B21D258009A03C0 /* SceneDelegate.swift */,
 				FE1966A52B21D258009A03C0 /* ViewController.swift */,
+				FE1966B52B21F70A009A03C0 /* Fonts */,
 				FE1966A72B21D258009A03C0 /* Main.storyboard */,
 				FE1966AA2B21D25A009A03C0 /* Assets.xcassets */,
 				FE1966AC2B21D25A009A03C0 /* LaunchScreen.storyboard */,
 				FE1966AF2B21D25A009A03C0 /* Info.plist */,
 			);
 			path = TasarimCalismasi;
+			sourceTree = "<group>";
+		};
+		FE1966B52B21F70A009A03C0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FE1966B62B21F761009A03C0 /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +122,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = FE1966952B21D258009A03C0;
 			productRefGroup = FE19669F2B21D258009A03C0 /* Products */;
@@ -126,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE1966AE2B21D25A009A03C0 /* LaunchScreen.storyboard in Resources */,
+				FE1966B72B21F761009A03C0 /* Pacifico-Regular.ttf in Resources */,
 				FE1966AB2B21D25A009A03C0 /* Assets.xcassets in Resources */,
 				FE1966A92B21D258009A03C0 /* Main.storyboard in Resources */,
 			);
@@ -151,6 +166,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FE1966A82B21D258009A03C0 /* Base */,
+				FE1966B82B220999009A03C0 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -159,6 +175,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FE1966AD2B21D25A009A03C0 /* Base */,
+				FE1966B92B220999009A03C0 /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,6 +188,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -234,6 +252,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -295,6 +314,7 @@
 				DEVELOPMENT_TEAM = YCQ4KH7F3F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TasarimCalismasi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pizza;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,6 +343,7 @@
 				DEVELOPMENT_TEAM = YCQ4KH7F3F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TasarimCalismasi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pizza;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
