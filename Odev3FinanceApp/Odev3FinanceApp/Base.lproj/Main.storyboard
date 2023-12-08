@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Odev3FinanceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="MPp-3Z-AXk">
+                                <rect key="frame" x="111.33333333333333" y="74.999999999999986" width="170.66666666666669" height="170.66666666666663"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Chunchun Wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkS-8d-oCK">
+                                <rect key="frame" x="19.333333333333343" y="261.66666666666669" width="354.33333333333326" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the future of financial management with our Chunchun Wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebO-98-kIy">
+                                <rect key="frame" x="32" y="307.66666666666669" width="329" height="82.666666666666686"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="sk2-ON-Bu2">
+                                <rect key="frame" x="121" y="430.33333333333331" width="151" height="20.333333333333314"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nkA-c1-EcQ">
+                                        <rect key="frame" x="0.0" y="0.99999999999999822" width="19.666666666666668" height="19"/>
+                                        <color key="tintColor" name="buttonColor"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nBe-15-GEr">
+                                        <rect key="frame" x="65.666666666666657" y="0.99999999999999822" width="19.666666666666671" height="19"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EhF-d6-Bqn">
+                                        <rect key="frame" x="131.33333333333334" y="0.99999999999999822" width="19.666666666666657" height="19"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K5-JF-RVs">
+                                <rect key="frame" x="101.00000000000001" y="500.66666666666669" width="191.33333333333337" height="54.666666666666686"/>
+                                <color key="backgroundColor" name="buttonColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Started" subtitle="">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                    <color key="baseForegroundColor" name="textColor"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already a user?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdt-Oa-Uc6">
+                                <rect key="frame" x="54.999999999999986" y="605.33333333333337" width="165.66666666666663" height="27.666666666666629"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuC-BE-WdB">
+                                <rect key="frame" x="225.66666666666666" y="600.33333333333337" width="78.666666666666657" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="buttonColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MPp-3Z-AXk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="18j-8Z-cbe"/>
+                            <constraint firstItem="ZuC-BE-WdB" firstAttribute="top" secondItem="8K5-JF-RVs" secondAttribute="bottom" constant="45" id="5hm-qu-Abj"/>
+                            <constraint firstItem="gkS-8d-oCK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6ob-Si-sm5"/>
+                            <constraint firstItem="gkS-8d-oCK" firstAttribute="top" secondItem="MPp-3Z-AXk" secondAttribute="bottom" constant="16" id="BYD-9c-duf"/>
+                            <constraint firstItem="ZuC-BE-WdB" firstAttribute="leading" secondItem="gdt-Oa-Uc6" secondAttribute="trailing" constant="5" id="C7w-Nd-M6y"/>
+                            <constraint firstAttribute="trailing" secondItem="ebO-98-kIy" secondAttribute="trailing" constant="32" id="K1d-Lf-Pt8"/>
+                            <constraint firstItem="ebO-98-kIy" firstAttribute="top" secondItem="gkS-8d-oCK" secondAttribute="bottom" constant="16" id="LPd-ca-FEo"/>
+                            <constraint firstItem="8K5-JF-RVs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O9W-Xy-XBg"/>
+                            <constraint firstItem="8K5-JF-RVs" firstAttribute="top" secondItem="sk2-ON-Bu2" secondAttribute="bottom" constant="50" id="Tbh-aS-pyf"/>
+                            <constraint firstItem="MPp-3Z-AXk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="VzP-eq-hFJ"/>
+                            <constraint firstItem="sk2-ON-Bu2" firstAttribute="top" secondItem="ebO-98-kIy" secondAttribute="bottom" constant="40" id="W3i-Iq-RXW"/>
+                            <constraint firstItem="gdt-Oa-Uc6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="jW5-Mn-USz"/>
+                            <constraint firstItem="ebO-98-kIy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="njE-YU-1f1"/>
+                            <constraint firstItem="sk2-ON-Bu2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wk1-9q-kRw"/>
+                            <constraint firstItem="gdt-Oa-Uc6" firstAttribute="top" secondItem="8K5-JF-RVs" secondAttribute="bottom" constant="50" id="x8R-SX-JsH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="circle" catalog="system" width="128" height="123"/>
+        <image name="circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="buttonColor">
+            <color red="0.84517045454545459" green="0.51817867317773592" blue="0.18077323728100528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.20077622338486467" green="0.20028602243190288" blue="0.21304845328282829" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
