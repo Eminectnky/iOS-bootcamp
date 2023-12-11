@@ -20,9 +20,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var segmentedController: UISegmentedControl!
     
     
+    @IBOutlet weak var labelSlider: UILabel!
+    
+    @IBOutlet weak var slider: UISlider!
+    
+    
+    @IBOutlet weak var labelStepper: UILabel!
+    
+    
+    @IBOutlet weak var stepper: UIStepper!
+    
+    
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        labelSlider.text = String(Int(slider.value))
+        
+        labelStepper.text = String(Int(stepper.value))
+        
+        indicator.isHidden = true
     }
 
     @IBAction func buttonYap(_ sender: Any) {
@@ -59,12 +76,33 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func sliderDegisim(_ sender: UISlider) {
+        
+        labelSlider.text = String(Int(sender.value))
+    }
+    
+    @IBAction func stepperDegisim(_ sender: UIStepper) {
+        labelStepper.text = String(Int(sender.value))
+    }
+    
+    @IBAction func buttonBasla(_ sender: Any) {
+        
+        indicator.isHidden = false
+        indicator.startAnimating()
+    }
+    
+    @IBAction func buttonDur(_ sender: Any) {
+        indicator.isHidden = true
+        indicator.stopAnimating()
+    }
+    
     @IBAction func goster(_ sender: Any) {
         print("Switch Durum : \(mSwitch.isOn)")
         let secilenIndex = segmentedController.selectedSegmentIndex
         let secilenKategori = segmentedController.titleForSegment(at: secilenIndex )
         print("Segmented Durum: \(secilenKategori!)")
-        
+        print("Slider Durum: \(slider.value)")
+        print("Stepper Durum: \(stepper.value)")
     }
     
     
