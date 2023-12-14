@@ -59,11 +59,11 @@
                                                     <action selector="allClearTop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3T7-Dh-k62"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpO-AW-nsi">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpO-AW-nsi">
                                                 <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="114"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="delete">
+                                                <state key="normal" image="delete.right" catalog="system">
                                                     <color key="titleColor" systemColor="systemRedColor"/>
                                                 </state>
                                                 <connections>
@@ -318,6 +318,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="delete.right" catalog="system" width="128" height="102"/>
         <systemColor name="systemGrayColor">
             <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

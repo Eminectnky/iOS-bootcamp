@@ -92,14 +92,12 @@ class ViewController: UIViewController {
         calculatorWorkings.text = workings
     }
     
+    
     @IBAction func percentTop(_ sender: Any)
     {
         
         addToWorkings(value: "%")
     }
-    
-    
-    
     
     @IBAction func divideTop(_ sender: Any) {
         addToWorkings(value: "/")
