@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol HucreProtocol {
+    func sepeteEkleTiklandi(indexPath: IndexPath)
+}
+
 class UrunlerHucre: UITableViewCell {
 
     @IBOutlet weak var imageViewUrun: UIImageView!
@@ -17,6 +21,9 @@ class UrunlerHucre: UITableViewCell {
     
     
     @IBOutlet weak var hucreArkaplan: UIView!
+    
+    var hucreProtocol: HucreProtocol?
+    var indexPath: IndexPath?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,5 +37,6 @@ class UrunlerHucre: UITableViewCell {
     }
 
     @IBAction func buttonSepeteEkle(_ sender: Any) {
+        hucreProtocol?.sepeteEkleTiklandi(indexPath: indexPath!)
     }
 }
