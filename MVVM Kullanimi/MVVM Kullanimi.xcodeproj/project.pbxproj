@@ -13,6 +13,9 @@
 		FEC54FFE2B3F0590002234DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC54FFC2B3F0590002234DC /* Main.storyboard */; };
 		FEC550002B3F0591002234DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC54FFF2B3F0591002234DC /* Assets.xcassets */; };
 		FEC550032B3F0591002234DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC550012B3F0591002234DC /* LaunchScreen.storyboard */; };
+		FEC5500B2B3F17A4002234DC /* AnasayfaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC5500A2B3F17A4002234DC /* AnasayfaViewModel.swift */; };
+		FEC5501A2B3F1E12002234DC /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FEC550192B3F1E12002234DC /* RxSwift */; };
+		FEC550222B3F6FF7002234DC /* MatematikRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC550212B3F6FF6002234DC /* MatematikRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		FEC54FFF2B3F0591002234DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEC550022B3F0591002234DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEC550042B3F0591002234DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC5500A2B3F17A4002234DC /* AnasayfaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaViewModel.swift; sourceTree = "<group>"; };
+		FEC550212B3F6FF6002234DC /* MatematikRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatematikRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC5501A2B3F1E12002234DC /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 				FEC54FF62B3F0590002234DC /* AppDelegate.swift */,
 				FEC54FF82B3F0590002234DC /* SceneDelegate.swift */,
 				FEC54FFA2B3F0590002234DC /* ViewController.swift */,
+				FEC5500A2B3F17A4002234DC /* AnasayfaViewModel.swift */,
+				FEC550212B3F6FF6002234DC /* MatematikRepository.swift */,
 				FEC54FFC2B3F0590002234DC /* Main.storyboard */,
 				FEC54FFF2B3F0591002234DC /* Assets.xcassets */,
 				FEC550012B3F0591002234DC /* LaunchScreen.storyboard */,
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "MVVM Kullanimi";
+			packageProductDependencies = (
+				FEC550192B3F1E12002234DC /* RxSwift */,
+			);
 			productName = "MVVM Kullanimi";
 			productReference = FEC54FF32B3F0590002234DC /* MVVM Kullanimi.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = FEC54FEA2B3F0590002234DC;
+			packageReferences = (
+				FEC5500C2B3F1E11002234DC /* XCRemoteSwiftPackageReference "RXSwift" */,
+			);
 			productRefGroup = FEC54FF42B3F0590002234DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +154,9 @@
 			files = (
 				FEC54FFB2B3F0590002234DC /* ViewController.swift in Sources */,
 				FEC54FF72B3F0590002234DC /* AppDelegate.swift in Sources */,
+				FEC5500B2B3F17A4002234DC /* AnasayfaViewModel.swift in Sources */,
 				FEC54FF92B3F0590002234DC /* SceneDelegate.swift in Sources */,
+				FEC550222B3F6FF7002234DC /* MatematikRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +379,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEC5500C2B3F1E11002234DC /* XCRemoteSwiftPackageReference "RXSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RXSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEC550192B3F1E12002234DC /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEC5500C2B3F1E11002234DC /* XCRemoteSwiftPackageReference "RXSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FEC54FEB2B3F0590002234DC /* Project object */;
 }
