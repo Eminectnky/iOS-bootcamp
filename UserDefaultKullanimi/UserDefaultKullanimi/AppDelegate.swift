@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Odev6
+//  UserDefaultKullanimi
 //
-//  Created by Emine CETINKAYA on 30.12.2023.
+//  Created by Emine CETINKAYA on 18.05.2024.
 //
 
 import UIKit

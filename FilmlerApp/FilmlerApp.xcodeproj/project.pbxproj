@@ -16,6 +16,13 @@
 		FE6334E22B305709005B3AB2 /* Filmler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6334E12B305709005B3AB2 /* Filmler.swift */; };
 		FE6334E42B3057F0005B3AB2 /* DetaySayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6334E32B3057F0005B3AB2 /* DetaySayfa.swift */; };
 		FE6334E62B30605F005B3AB2 /* FilmlerHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6334E52B30605F005B3AB2 /* FilmlerHucre.swift */; };
+		FEE7FF162BF8F259006135BC /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = FEE7FF152BF8F259006135BC /* RxBlocking */; };
+		FEE7FF182BF8F259006135BC /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FEE7FF172BF8F259006135BC /* RxBlocking-Dynamic */; };
+		FEE7FF1A2BF8F259006135BC /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FEE7FF192BF8F259006135BC /* RxCocoa */; };
+		FEE7FF1C2BF8F259006135BC /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FEE7FF1B2BF8F259006135BC /* RxCocoa-Dynamic */; };
+		FEE7FF1E2BF8F259006135BC /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = FEE7FF1D2BF8F259006135BC /* RxRelay */; };
+		FEE7FF222BF8F3DC006135BC /* FilmlerDaoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7FF212BF8F3DC006135BC /* FilmlerDaoRepository.swift */; };
+		FEE7FF252BF8F43B006135BC /* AnasayfaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE7FF242BF8F43B006135BC /* AnasayfaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,8 @@
 		FE6334E12B305709005B3AB2 /* Filmler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filmler.swift; sourceTree = "<group>"; };
 		FE6334E32B3057F0005B3AB2 /* DetaySayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaySayfa.swift; sourceTree = "<group>"; };
 		FE6334E52B30605F005B3AB2 /* FilmlerHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmlerHucre.swift; sourceTree = "<group>"; };
+		FEE7FF212BF8F3DC006135BC /* FilmlerDaoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmlerDaoRepository.swift; sourceTree = "<group>"; };
+		FEE7FF242BF8F43B006135BC /* AnasayfaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE7FF1E2BF8F259006135BC /* RxRelay in Frameworks */,
+				FEE7FF1C2BF8F259006135BC /* RxCocoa-Dynamic in Frameworks */,
+				FEE7FF1A2BF8F259006135BC /* RxCocoa in Frameworks */,
+				FEE7FF162BF8F259006135BC /* RxBlocking in Frameworks */,
+				FEE7FF182BF8F259006135BC /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +91,7 @@
 		FE6334DC2B305615005B3AB2 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				FEE7FF202BF8F399006135BC /* repo */,
 				FE6334DF2B305652005B3AB2 /* entity */,
 			);
 			path = data;
@@ -85,6 +100,7 @@
 		FE6334DD2B30562D005B3AB2 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				FEE7FF232BF8F40D006135BC /* viewmodel */,
 				FE6334E02B305666005B3AB2 /* tableview */,
 				FE6334DE2B305638005B3AB2 /* views */,
 			);
@@ -116,6 +132,22 @@
 			path = tableview;
 			sourceTree = "<group>";
 		};
+		FEE7FF202BF8F399006135BC /* repo */ = {
+			isa = PBXGroup;
+			children = (
+				FEE7FF212BF8F3DC006135BC /* FilmlerDaoRepository.swift */,
+			);
+			path = repo;
+			sourceTree = "<group>";
+		};
+		FEE7FF232BF8F40D006135BC /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				FEE7FF242BF8F43B006135BC /* AnasayfaViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +164,13 @@
 			dependencies = (
 			);
 			name = FilmlerApp;
+			packageProductDependencies = (
+				FEE7FF152BF8F259006135BC /* RxBlocking */,
+				FEE7FF172BF8F259006135BC /* RxBlocking-Dynamic */,
+				FEE7FF192BF8F259006135BC /* RxCocoa */,
+				FEE7FF1B2BF8F259006135BC /* RxCocoa-Dynamic */,
+				FEE7FF1D2BF8F259006135BC /* RxRelay */,
+			);
 			productName = FilmlerApp;
 			productReference = FE6334C52B3055CC005B3AB2 /* FilmlerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -160,6 +199,9 @@
 				Base,
 			);
 			mainGroup = FE6334BC2B3055CC005B3AB2;
+			packageReferences = (
+				FEE7FF142BF8F259006135BC /* XCRemoteSwiftPackageReference "RXSwift" */,
+			);
 			productRefGroup = FE6334C62B3055CC005B3AB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -189,10 +231,12 @@
 			files = (
 				FE6334CD2B3055CC005B3AB2 /* Anasayfa.swift in Sources */,
 				FE6334C92B3055CC005B3AB2 /* AppDelegate.swift in Sources */,
+				FEE7FF252BF8F43B006135BC /* AnasayfaViewModel.swift in Sources */,
 				FE6334CB2B3055CC005B3AB2 /* SceneDelegate.swift in Sources */,
 				FE6334E42B3057F0005B3AB2 /* DetaySayfa.swift in Sources */,
 				FE6334E22B305709005B3AB2 /* Filmler.swift in Sources */,
 				FE6334E62B30605F005B3AB2 /* FilmlerHucre.swift in Sources */,
+				FEE7FF222BF8F3DC006135BC /* FilmlerDaoRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +459,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEE7FF142BF8F259006135BC /* XCRemoteSwiftPackageReference "RXSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RXSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEE7FF152BF8F259006135BC /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEE7FF142BF8F259006135BC /* XCRemoteSwiftPackageReference "RXSwift" */;
+			productName = RxBlocking;
+		};
+		FEE7FF172BF8F259006135BC /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEE7FF142BF8F259006135BC /* XCRemoteSwiftPackageReference "RXSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		FEE7FF192BF8F259006135BC /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEE7FF142BF8F259006135BC /* XCRemoteSwiftPackageReference "RXSwift" */;
+			productName = RxCocoa;
+		};
+		FEE7FF1B2BF8F259006135BC /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEE7FF142BF8F259006135BC /* XCRemoteSwiftPackageReference "RXSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		FEE7FF1D2BF8F259006135BC /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEE7FF142BF8F259006135BC /* XCRemoteSwiftPackageReference "RXSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE6334BD2B3055CC005B3AB2 /* Project object */;
 }
